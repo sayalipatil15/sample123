@@ -1,0 +1,16 @@
+#Loading your dataset
+> newdat <- read.table("C:\\Users\\nikita\\Desktop\\Project\\asia.csv", header=T,sep=",")
+
+
+#Plotting the data
+> plot(Population~Area,data=newdat)
+
+
+#using the lm function
+>  mod <- lm(Population~Area,data=newdat)
+
+#Summarizing the data
+>summary(mod)
+
+#fitting the Line
+>abline(mod)
